@@ -20,10 +20,9 @@
 
 Please refer to the [STM32C0316_DK_DEMO_BRISK.PDF](./Doc/HOW_TO_PLAY/STM32C0316-DK-DEMO-BRISK.pdf) document.
 
-## Release note
+## Feedback and proposals
 
-Details about the content of this release are available in the release note [here](https://htmlpreview.github.io/?https://github.com/stm32-hotspot/STM32C0616-DK-BRISK-DEMO/blob/main/Release_Notes.html).
-After publication of this project, a specific community.st.com post named "STM32C0316-DK-DEMO-BRISK" maybe created for casual feedback.
+Do not hesitate to react and share your feedback and proposals by replying to [this](https://community.st.com/s/question/0D53W000024Zv43SAC/stm32c0316dkbriskdemo-stm32-git-hot-spot) post on the **ST Community** forum.
 
 ## Troubleshooting
 
