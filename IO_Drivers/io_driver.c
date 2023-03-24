@@ -125,18 +125,18 @@ int32_t IO_PadInit(IO_Pad_t* pIO ) { // this is for a single pin
     __set_PRIMASK(primask);// atomic end
   }
 
-  /* Configure the IO Output Type */  
+  /* Configure the IO Pull-Up/Pull-Down */  
   if(pIO->Config.Pull) {
     
     bfmask = ~(0x3<<(pad_position * 2));
     bfval = (pIO->Config.Pull-1) << (pad_position * 2);
     __set_PRIMASK(1);// atomic start
-    tmp = (GPIOx->OTYPER & bfmask) | bfval;
+    tmp = (GPIOx->PUPDR & bfmask) | bfval;
     GPIOx->PUPDR = tmp;
     __set_PRIMASK(primask);    // atomic end
   }
   
-  /* Configure the output type */
+  /* Configure the IO Output Type */
   if(pIO->Config.Drive) {
 
     bfmask = ~(1<<pad_position);
